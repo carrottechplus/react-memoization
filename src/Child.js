@@ -7,8 +7,9 @@ function Child(props) {
 	return (
 		<div>
 			<h1>Child : {props.Counter}</h1>
+			<button onClick={props.updateCounter}>update</button>
 		</div>
 	);
 }
 
-export default memo(Child);
+export default memo(Child, isEqual);
