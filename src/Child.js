@@ -11,4 +11,4 @@ function Child(props) {
 	);
 }
 
-export default memo(Child, isEqual);
+export default memo(Child);
