@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import Child from './Child';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
 	// const [colors] = useState(['red', 'green', 'blue']);
 	const colors = ['red', 'green', 'blue'];
 
-	const updateCounter = () => setCounter(Counter + 1);
+	const updateCounter = useCallback(() => setCounter(Counter + 1), [Counter]);
 
 	return (
 		<div>
