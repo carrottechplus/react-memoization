@@ -1,3 +1,4 @@
+import { memo } from 'react';
 function Child() {
 	console.log('child');
 	return (
@@ -7,4 +8,4 @@ function Child() {
 	);
 }
 
-export default Child;
+export default memo(Child);
